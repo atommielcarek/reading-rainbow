@@ -1,0 +1,29 @@
+{
+  "name": "reading-rainbow",
+  "version": "1.0.0",
+  "description": "README Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atommielcarek/reading-rainbow.git"
+  },
+  "keywords": [
+    "README",
+    "Node.js",
+    "Generator",
+    "Javascript"
+  ],
+  "author": "Adam Mielcarek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atommielcarek/reading-rainbow/issues"
+  },
+  "homepage": "https://github.com/atommielcarek/reading-rainbow#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "inquirer": "^8.1.2"
+  }
+}
