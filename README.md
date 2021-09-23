@@ -15,6 +15,8 @@
   npm i
   ## Usage 
   After using CLI "node index.js" the user is presented with a series of questions about their application whose answers then populate their finished README markdown through the use of "inquire"
+  ## Demo
+  https://watch.screencastify.com/v/vDIq9ZPg3xXmpl8KIc61
   ## License 
   This project is licensed under MIT
   ## Contributing 
