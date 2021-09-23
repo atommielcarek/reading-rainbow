@@ -1,13 +1,9 @@
-// require modules 
 const fs = require('fs'); 
 const inquirer = require('inquirer'); 
 
-// linking to page where the README is developed 
-const generatePage = require('./utils/generateMarkdown.js');
+const generatePage = require('./generateMarkdown.js');
 
-// array of questions for user
 const questions = () => {
-    // using inquirer to prompt questions to user 
     return inquirer.prompt([
     {
         type: 'input',
@@ -117,31 +113,27 @@ const questions = () => {
 ]);
 };
 
-// function to write README file using file system 
 const writeFile = data => {
     fs.writeFile('README.md', data, err => {
-        // if there is an error 
         if (err) {
             console.log(err);
-            return;
-        // when the README has been created 
+            return; 
         } else {
             console.log("Your README has been created successfully !")
         }
     })
 }; 
 
-// function call to initialize program
 questions()
-// getting user answers 
+// retrieves user answers 
 .then(answers => {
     return generatePage(answers);
 })
-// using data to display on page 
+// displays data to page
 .then(data => {
     return writeFile(data);
 })
-// catching errors 
+// catches errors 
 .catch(err => {
     console.log(err)
 })
