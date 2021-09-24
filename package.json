@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "README Generator",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "inquirer": "^8.1.5"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "npm test"
